@@ -10,5 +10,6 @@ export class AppComponent {
   constructor(private readonly router: Router) {}
 
   goToCatRanking(): void {
+    this.router.navigate(['ranking']);
   }
 }
