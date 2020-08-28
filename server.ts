@@ -13,6 +13,10 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
+/**
+ * Drop database
+ * then create documents from cats json
+ */
 const initDatabase: () => void = () => {
   mongoose.connection.dropDatabase(() => {
     console.log('Successfully connect to MongoDB.');
