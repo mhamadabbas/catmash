@@ -4,7 +4,8 @@ import * as express from 'express';
 
 import { CAT_ROUTER } from './routers/cat.router';
 
-const staticRoot = __dirname + '/client';
+const staticRoot = __dirname + '/dist/client';
+
 const app = express();
 
 //BASE MIDDLEWARES
