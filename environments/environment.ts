@@ -6,4 +6,4 @@ const environments = {
   production
 };
 
-export const environment = environments[process.env.NODE_ENV];
+export const environment = environments[process.env.NODE_ENV || 'development'];

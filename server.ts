@@ -13,18 +13,22 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
+const initDatabase: () => void = () => {
+  mongoose.connection.dropDatabase(() => {
+    console.log('Successfully connect to MongoDB.');
+    Cat.create(cats_data, (err: any, res: ICat[]) => {
+      console.log('Data inserted !');
+    });
+  });
+};
+
 mongoose
   .connect(DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
   })
-  .then(() => {
-    console.log('Successfully connect to MongoDB.');
-    Cat.create(cats_data, (err: any, res: ICat[]) => {
-      console.log('Dummy data inserted !');
-    });
-  })
+  .then(initDatabase)
   .catch((err) => {
     console.error('Connection error', err);
     process.exit();

@@ -2,7 +2,7 @@ import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
 import * as express from 'express';
 
-import CAT_ROUTER from './routers/cat.router';
+import { CAT_ROUTER } from './routers/cat.router';
 
 const staticRoot = __dirname + '/client';
 const app = express();
