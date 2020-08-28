@@ -10,7 +10,7 @@ COPY . /usr/src/app
 RUN tsc
 WORKDIR /usr/src/app/client
 RUN npm i
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli @angular-devkit/build-angular
 RUN npm run build
 WORKDIR /usr/src/app
 EXPOSE 8080
