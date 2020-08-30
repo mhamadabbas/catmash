@@ -8,5 +8,5 @@ RUN npm install
 RUN npm install -g typescript
 COPY . /usr/src/app
 RUN tsc
-EXPOSE 8080
+EXPOSE 80
 CMD ["npm","start"]
