@@ -14,6 +14,10 @@ export class CatRankingComponent implements OnInit {
 
   constructor(private readonly catService: CatService) {}
 
+  /**
+   * Call catService to get all cats sort by rank
+   * then split the first cat from it
+   */
   ngOnInit(): void {
     this.catService.getAllCats().subscribe((cats: Cat[]) => {
       this.cats = cats;
