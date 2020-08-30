@@ -8,10 +8,5 @@ RUN npm install
 RUN npm install -g typescript
 COPY . /usr/src/app
 RUN tsc
-WORKDIR /usr/src/app/client
-RUN npm i
-RUN npm install -g @angular/cli @angular-devkit/build-angular
-RUN npm run build
-WORKDIR /usr/src/app
 EXPOSE 8080
 CMD ["npm","start"]
