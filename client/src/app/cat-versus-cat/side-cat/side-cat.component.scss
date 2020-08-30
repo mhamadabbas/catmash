@@ -2,10 +2,9 @@
   h1 {
     position: relative;
     text-align: center;
-    top: 20%;
+    top: 15%;
     transform: translateY(-50%);
     font-size: 2rem;
-    font-family: sans-serif;
     color: white;
 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36), 0 0 1em rgba(0, 0, 0, 0.36), 0 0 0.2em rgba(0, 0, 0, 0.36);
@@ -13,7 +12,7 @@
 
   div {
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 50%;
     width: 50%;
@@ -27,5 +26,11 @@
     -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
     -moz-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
     box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
+
+    &:hover {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(1.1);
+      -ms-transform: translate3d(-50%, -50%, 0) scale(1.1);
+      transform: translate3d(-50%, -50%, 0) scale(1.1);
+    }
   }
 }
