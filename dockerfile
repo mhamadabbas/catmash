@@ -5,8 +5,6 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 RUN npm cache clean --force
 RUN npm install
-RUN npm install -g typescript
 COPY . /usr/src/app
-RUN tsc
-EXPOSE 80
+EXPOSE 8080
 CMD ["npm","start"]
