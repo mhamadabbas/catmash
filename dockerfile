@@ -6,5 +6,5 @@ COPY package.json /usr/src/app
 RUN npm cache clean --force
 RUN npm install
 COPY . /usr/src/app
-EXPOSE 8080
+EXPOSE 80
 CMD ["npm","start"]

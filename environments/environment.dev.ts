@@ -2,7 +2,7 @@ import { Environment } from '../app/models/environment.model';
 
 export const environment: Environment = {
   app: {
-    port: 8080,
+    port: 80,
   },
   db: {
     HOST: 'localhost',

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUri: 'http://' + window.location.hostname + ':8080/api',
+  apiUri: 'http://' + window.location.hostname + ':80/api',
 };
 
 /*
