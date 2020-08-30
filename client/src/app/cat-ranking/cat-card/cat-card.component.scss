@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+
+
+  .ranking {
+    width: 15%;
+    font-size: 6rem;
+    color: gray;
+    border-right: 1px solid #ddd;
+  }
+
+  .img {
+    margin: 0 2rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 10px solid white;
+
+    background: url() 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    padding: 0 2rem;
+    display: block;
+    font-size: 3rem;
+    color: gray;
+    border-left: 1px solid #ddd;
+
+    * > label {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+:host  {
+  .navigate {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3rem;
+    width: 15rem;
+    background-color: lightgrey;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+    -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.36);
+  }
+}
