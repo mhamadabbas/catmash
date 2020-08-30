@@ -1,6 +1,6 @@
 # catmash
 
-Application disponible à l'url:     __ec2-13-59-224-84.us-east-2.compute.amazonaws.com__
+Application disponible à l'url:     __http://ec2-18-188-86-177.us-east-2.compute.amazonaws.com/__
 
 Dans le cas d'un lancement en local:
 
