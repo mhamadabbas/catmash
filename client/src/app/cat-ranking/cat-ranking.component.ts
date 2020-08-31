@@ -20,8 +20,8 @@ export class CatRankingComponent implements OnInit {
    */
   ngOnInit(): void {
     this.catService.getAllCats().subscribe((cats: Cat[]) => {
-      this.cats = cats;
-      this.prettiestCat = this.cats.shift();
+      this.cats = cats || [];
+      this.prettiestCat = this.cats.shift() || new Cat();
     });
   }
 }

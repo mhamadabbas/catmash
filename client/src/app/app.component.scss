@@ -1,4 +1,9 @@
 :host  {
+
+  &:hover {
+    cursor: pointer;
+  }
+
   .navigate {
     position: absolute;
     z-index: 2;
